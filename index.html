@@ -1,11 +1,88 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
+    <title>Formularausfüllung</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza Bestellseite</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <script src="app.js"></script>
+    <div class="container">
+      <h3>Persönliche und Adressdaten</h3>
+      <div class="box">
+        <div class="column">
+          <label for="vorname">Vorname:</label>
+          <input type="text" id="vorname" name="vorname" required />
+          <label for="nachname">Nachname:</label>
+          <input type="text" id="nachname" name="nachname" required />
+          <label for="adresse">Adresse:</label>
+          <input type="text" id="adresse" name="adresse" required />
+          <label for="postleitzahl">Postleitzahl:</label>
+          <input type="number" id="postleitzahl" name="postleitzahl" required />
+        </div>
+        <div class="column">
+          <label for="geburtsdatum">Geburtsdatum:</label>
+          <input type="date" id="geburtsdatum" name="geburtsdatum" required />
+          <label>Geschlecht:</label>
+          <label for="männlich"
+            ><input
+              type="radio"
+              id="männlich"
+              name="geschlecht"
+              value="männlich"
+              required
+            />Männlich</label
+          >
+          <label for="weiblich"
+            ><input
+              type="radio"
+              id="weiblich"
+              name="geschlecht"
+              value="weiblich"
+              required
+            />Weiblich</label
+          >
+        </div>
+      </div>
+      <h3>Daten zur Pizza</h3>
+      <div class="box">
+        <div class="column">
+          <label for="pizzenauswahl">Pizzenauswahl:</label>
+          <select id="pizzenauswahl" name="pizzenauswahl" required>
+            <option value="">Bitte auswählen</option>
+            <option value="margherita">Margherita</option>
+            <option value="salami">Salami</option>
+            <option value="hawaii">Hawaii</option>
+          </select>
+          <label for="extras">Extras:</label>
+          <input type="checkbox" id="extras" name="extras" />
+          <label for="schärfeslider">Schärfeslider:</label>
+          <input
+            type="range"
+            id="schärfeslider"
+            name="schärfeslider"
+            min="1"
+            max="4"
+            step="1"
+          />
+          <label for="schärfe">Schärfe:</label>
+          <input
+            type="number"
+            id="schärfe"
+            name="schärfe"
+            min="1"
+            max="4"
+            required
+          />
+        </div>
+        <div class="column">
+          <label for="zusatzwünsche">Zusatzwünsche:</label>
+          <textarea id="zusatzwünsche" name="zusatzwünsche"></textarea>
+          <button id="druckansicht" name="druckansicht" type="button">
+            Bestellung Druckansicht
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
