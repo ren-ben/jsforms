@@ -50,12 +50,14 @@
           <label for="pizzenauswahl">Pizzenauswahl:</label>
           <select id="pizzenauswahl" name="pizzenauswahl" required>
             <option value="">Bitte auswählen</option>
-            <option value="margherita">Margherita</option>
-            <option value="salami">Salami</option>
-            <option value="hawaii">Hawaii</option>
+            <option value="Margherita">Margherita</option>
+            <option value="Salami">Salami</option>
+            <option value="Hawaii">Hawaii</option>
           </select>
-          <label for="extras">Extras:</label>
-          <input type="checkbox" id="extras" name="extras" />
+          <label for="extra">Extra Käse</label>
+          <input type="checkbox" id="extra" name="extras" class="extras" />
+          <label for="extrap">Extra Pepperoni</label>
+          <input type="checkbox" id="extrap" name="extras" class="extras" />
           <label for="schärfeslider">Schärfeslider:</label>
           <input
             type="range"
@@ -83,9 +85,9 @@
           </button>
         </div>
       </div>
-      <div class="box">
+      <div class="box" id="colorChange">
         <div class="column">
-          <div id="lelele">Sehr geehrter</div>
+          <div id="textWrapper">Sehr geehrter</div>
         </div>
       </div>
     </div>

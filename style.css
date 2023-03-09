@@ -79,6 +79,10 @@ button:hover {
   background-color: #006d87;
 }
 
+#colorChange {
+  opacity: 0;
+}
+
 @media screen and (max-width: 600px) {
   .column {
     flex-basis: 100%;
